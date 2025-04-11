@@ -6,5 +6,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class training_center extends Model
 {
-    //
+    public function teachers(){
+        return $this->hasMany(teachers::class);
+        
+    }
+    public function courses(){
+        return $this->hasMany(courses::class);
+        
+    }
 }
