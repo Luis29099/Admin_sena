@@ -7,11 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 class areas extends Model
 {
     public function teachers(){
-        return $this->hasMany('App\Models\User');
+        return $this->hasMany(teachers::class);
 
     }
-    public function curses(){
-        return $this->hasMany('App\Models\User');
+    public function courses(){
+        return $this->hasMany(courses::class);
         
     }
 
