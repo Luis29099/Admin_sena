@@ -10,7 +10,7 @@ class apprentices extends Model
         return $this->belongsTo(computers::class);
     }
     public function course(){
-        return $this->hasMany(courses::class);
+        return $this->belongsTo(courses::class);
     }
 
 }
